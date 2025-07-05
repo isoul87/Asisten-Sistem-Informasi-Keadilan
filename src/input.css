@@ -5,3 +5,11 @@
 body {
     @apply font-roboto;
 }
+
+section {
+    @apply lg:px-32 lg:py-16;
+}
+
+li {
+    @apply text-base
+}
