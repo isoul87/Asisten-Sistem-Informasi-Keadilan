@@ -7,39 +7,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+   <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
     <title>Waikabubak</title>
 </head>
 <body class="bg-slate-300">
-    <header class="p-2">
+    <header class="py-5 px-3">
         <head class="w-full">
-            <div class="flex gap-4">
+            <div class="flex flex-col items-center gap-4 justify-between">
                 <div>
-                    <img src="src/img/logo.png" alt="" width="200">
+                    <img src="src/img/logo.png" alt="" width="100">
                 </div>
-                <div class="text-xs">
-                    <h3>Mahkamah Agung Republik Indonesia</h3>
-                    <h1 class="font-bold">PENGADILAN NEGERI WAIKABUBAK KELAS IA</h1>
-                    <p>Jalan Raya Pati - Kudus KM.3, Pati Jawa Tengah Kode Pos 59163
+                <div class="text-xs flex flex-col text-center">
+                    <h3 class="text-lg text-slate-600 lg:text-xl">Mahkamah Agung Republik Indonesia</h3>
+                    <h1 class="font-bold text-xl lg:text-3xl">PENGADILAN NEGERI WAIKABUBAK KELAS IA</h1>
+                    <p class="text-slate-600">Jalan Raya Pati - Kudus KM.3, Pati Jawa Tengah Kode Pos 59163
                         Telp/Fax. (0295) 381075; Email. info@pn-pati.go.id</p>
+                </div>
+                <div class="flex">
+                    <img src="src/img/berakhlak-bangga-melayani-bangsa-300x66 1.png" width="200" alt="">
                 </div>
             </div>
         </head>
     </header>
     <div class="bg-teal-600 p-4">
         <ul class="flex justify-center items-center gap-10">
-            <li><a href="#" class="hover:bg-teal-950 hover:text-white py-4 px-3">Home</a></li>
-            <li><a href="#"  class="hover:bg-teal-950 hover:text-white py-4 px-3">Form</a></li>
-            <li><a href="#"  class="hover:bg-teal-950 hover:text-white py-4 px-3">Faq</a></li>
+            <li><a href="#" class="font-bold hover:bg-teal-950 hover:text-white py-4 px-3"><i class="ph-fill ph-house mr-2 text-slate-900 my-auto "></i>Home</a></li>
+            <li><a href="#"  class="font-bold hover:bg-teal-950 hover:text-white py-4 px-3"><i class="ph-fill ph-info mr-2 text-slate-900 my-auto "></i>Form</a></li>
+            <li><a href="#"  class="font-bold hover:bg-teal-950 hover:text-white py-4 px-3"><i class="ph-fill ph-question mr-2 text-slate-900 my-auto "></i>Faq</a></li>
         </ul>
     </div>
     <!-- <hr class="border-t-8 border-teal-600 my-1 mb-64 rounded-md"> -->
-   <section class="w-full bg-white container lg:px-32 lg:py-16 shadow-sm rounded-xl">
+     <div class="w-full h-2 bg-teal-600 mt-20"></div>
+   <section class="w-full bg-white containerlg:px-64 lg:py-32  shadow-sm rounded-xl">
     <h1 class="font-bold text-2xl text-amber-700 text-center mb-3 pt-5">Layanan Kepaniteraan perdata</h1>
     <p class="text-base ">Jenis Pelayanan Kepaniteraan Perdata :</p>
     <img src="src/img/1.png" alt="">
     <img src="src/img/slide2.png" alt="ini gambar">
    </section>
-   <section class="py-10 px-8">
+   <section class="py-10 px-8 lg:px-32">
     <div class="container p-8 lg:px-32 lg:py-32 bg-white rounded-md shadow-sm">
 
         <h1 class="text-2xl font-bold text-left mb-10">A. PENDAFTARAN PERKARA PERMOHONAN</h1>
@@ -58,6 +72,7 @@
         </p>
             <h1 class="text-xl font-bold my-5">Contoh Surat Permohonan</h1>
             <ul class="flex flex-col gap-8 text-lg">
+                <li class="truncate"><a href="src/pdf/Form Permohonon hak wali bagi anak.pdf`" target="_blank" class="text-blue-600 ">Form Permohonon hak wali bagi anak</a></li>
                 <li class="truncate"><a href="src/pdf/form Permohonan Pengesahan Anak Diluar Nikah.pdf" target="_blank" class="text-blue-600 ">form Permohonan Pengesahan Anak Diluar Nikah</a></li>
                 <li class="truncate"><a href="src/pdf/form_Permohonan_perubahan_nama_pada_akta_kelahiran_pemohon1ORG_1.pdf" target="_blank" class="text-blue-600 ">form_Permohonan_perubahan_nama_pada_akta_kelahiran_pemohon1ORG.pdf</a></li>
                 <li class="truncate"><a href="src/pdf/form_memori_keberatan_1.pdf" target="_blank" class="text-blue-600 ">form_memori_keberatan.pdf</a></li>
@@ -107,13 +122,7 @@
             <!-- B End -->
             <!-- Number 1 end -->
             <!-- Number 2 Start -->
-            <li><p class="text-lg mt-10">2. Proses pendaftaran perkara secara online</p></li>
-            <li><p class="text-slate-400 mt-5">setelah semua berkas pendaftaran siap, silahkan membuat akun ecourt terlebih dahulu
-                setelah memiliki akun ecourt, anda dapat melakukan pendaftaran perkara secara online
-                untuk informasi pembuatan akun dan pendaftaran online
-                klik link dibawah ini :</p></li>
-            <li><a href="" class="text-blue-500">https://pn-pati.go.id/informasi-ecourt/</a></li>
-            <li><p class="text-sky-400">Video Informasi Pendaftaran Perkara Permohonan dilengkapi dengan Bahasa Isyarat :</p></li>
+            
             <!-- Number 2 End -->
             <!-- A Head End -->
         </ul>
@@ -125,7 +134,8 @@
                 <!-- A Start -->
                 <li><h1 class="text-2xl">B. PENDAFTARAN PERKARA GUGATAN</h1></li>
                 <li><p class="text-xl">1. Siapkan Syarat Pendaftaran Perkara GUGATAN :</p></li>
-                <p class="text-lg">a. Surat permohonan :</p>
+                <li><p class="text-lg">1. Proses pendaftaran perkara secara offline</p></li>
+                <p class="text-base">a. Surat permohonan :</p>
                 <li><p class="text-slate-400">– Surat gugatan di ketik di Word format doc lalu disimpan di CD atau Flashdisk
                 lalu discan menjadi 1 file format pdf disimpan di CD atau Flashdisk.
                 CONTOH SURAT GUGATAN BISA ANDA LIHAT PADA LINK DIBAWAH INI 
@@ -133,28 +143,22 @@
                 <li><a href="src/pdf/form_gugatan_cerai_1.pdf" class="text-blue-500">form_gugatan_cerai.pdf</a></li>
                 <li><a href="src/pdf/form_gugatan_sederhana_1.pdf" class="text-blue-500">form_gugatan_sederhana.pdf</a></li>
                 <!-- A End -->
-                <li>b. Siapkan bukti-bukti pendukung</li>
-                <li>contoh bukti pendukung untuk gugatan cerai antara lain :</li>
-                <li>– Fotokopi KTP penggugat  dinasegel (materai Rp. 10.000 dan cap) pos</li>
-                <li>– Fotokopi Akte Perkawinan dinasegel (materai Rp. 10.000 dan cap) pos</li>
-                <li>– Fotokopi bukti pendukung untuk mendukung gugatan yang diajukan misal</li>
-                <li>- fotokopi KK dinasegel (materai Rp. 10.000 dan cap) pos</li>
-                <li>  fotokopi Akte Kelahiran Anak dinasegel (materai Rp. 10.000 dan cap) pos</li>
-                <li>  dsb</li>
+                <li class="text-base">b. Siapkan bukti-bukti pendukung</li>
+                <li><p class="text-slate-400">contoh bukti pendukung untuk gugatan cerai antara lain :
+                – Fotokopi KTP penggugat  dinasegel (materai Rp. 10.000 dan cap) pos
+                – Fotokopi Akte Perkawinan dinasegel (materai Rp. 10.000 dan cap) pos
+                – Fotokopi bukti pendukung untuk mendukung gugatan yang diajukan misal
+                - fotokopi KK dinasegel (materai Rp. 10.000 dan cap) pos
+                  fotokopi Akte Kelahiran Anak dinasegel (materai Rp. 10.000 dan cap) pos
+                  dsb</p></li>
                 <li>contoh bukti pendukung untuk gugatan sederhana antara lain :</li>
-                <li>– Fotokopi KTP penggugat  dinasegel (materai Rp. 10.000 dan cap) pos</li>
-                <li>– Fotokopi bukti pendukung untuk mendukung gugatan yang diajukan misal</li>
-                <li>  fotokopi surat perjanjian dinasegel (materai Rp. 10.000 dan cap) pos</li>
-                <li>  dsb</li>
+                <li class="text-slate-400">– Fotokopi KTP penggugat  dinasegel (materai Rp. 10.000 dan cap) pos,</li>
+                <li class="text-slate-400">– Fotokopi bukti pendukung untuk mendukung gugatan yang diajukan misal,</li>
+                <li class="text-slate-400">--  fotokopi surat perjanjian dinasegel (materai Rp. 10.000 dan cap) pos dsb.</li>
+             
                 <li>semua bukti yang sudah dinasegel pos di scan menjadi 1 file pdf disimpan di CD atau Flashdisk.</li>
                 <!-- Number 1 End -->
                 <!-- Number 2 Start -->
-                <li>2. Proses pendaftaran perkara secara online</li>
-                <li>setelah semua berkas pendaftaran siap, silahkan membuat akun ecourt terlebih dahulu.</li>
-                <li>setelah memiliki akun ecourt, anda dapat melakukan pendaftaran perkara secara online</li>
-                <li>untuk informasi pembuatan akun dan pendaftaran online</li>
-                <li>klik link dibawah ini :</li>
-                <li><a href="" class="text-blue-500"></a>Informasi ECOURT</li>
                 <li>BROSUR-BROSUR LAYANAN KEPANITEARAAN PERDATA  :</li>
                 <li>Brosur sop, prosedur pengajuan perkara, syarat permohonan eksekusi, syarat pengajuan gugatan,permohonan dan upaya hukum, mekanisme pengajuan gugatan sederhana :</li>
                 <li>Brosur-brosur</li>
@@ -163,4 +167,8 @@
         </div>          
         <!-- B Head End -->
     </section>
+    <footer>
+        <div class="w-full h-20 bg-teal-600"></div>
+        <div class="w-full h-20 bg-teal-700 flex items-center" ><p class="text-white font-bold ml-4">©2025 - Pengadilan Negeri Waikabubak Kelas IA</p></div>
+    </footer>
 </html>
