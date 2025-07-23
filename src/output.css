@@ -627,6 +627,10 @@ video {
   margin-left: 1rem;
 }
 
+.ml-8 {
+  margin-left: 2rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -645,10 +649,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.ml-8 {
-  margin-left: 2rem;
 }
 
 .flex {
@@ -701,10 +701,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .scroll-smooth {
@@ -790,10 +786,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.pl-5 {
-  padding-left: 1.25rem;
 }
 
 .pt-5 {
