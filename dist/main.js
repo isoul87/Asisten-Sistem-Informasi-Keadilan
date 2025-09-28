@@ -45,7 +45,7 @@ function generateFormList(fileArray, listId) {
 
         // Elemen judul tetap sama
         const title = document.createElement("p");
-        title.className = "truncate font-medium text-gray-800 text-base";
+        title.className = "truncate font-bold text-gray-800 text-base lg:text-xl";
         title.textContent = createTitleFromFile(filePath);
 
         // 2. Span diubah menjadi <a> dengan style tombol
