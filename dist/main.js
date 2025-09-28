@@ -12,9 +12,14 @@
         // --- Daftar File 2 ---
         const pdfFiles2 = [
             "src/pdf/BAHAN AKTUALISASI/Penetapan Anak/Permohonan Penetapan anak Pasangan meninggal.pdf",
+            "src/pdf/BAHAN AKTUALISASI/Penetapan Anak/form Permohonan Penetapan anak.pdf",
             "src/pdf/BAHAN AKTUALISASI/Pengangkatan anak/Form Pengesahan Anak Angkat.pdf",
-            "src/pdf/BAHAN AKTUALISASI/Pengangkatan anak/Syarat Calon Orangtua Angkat.pdf",
             "src/pdf/BAHAN AKTUALISASI/Permohonan Ganti nama/Permohonan Ganti Nama Sertifikat.pdf",
+            "src/pdf/BAHAN AKTUALISASI/Pengangkatan anak/Form Pengesahan Anak Angkat.pdf",
+            "src/pdf/BAHAN AKTUALISASI/Permohonan Ganti nama/Permohonan Ganti Nama.pdf",
+            "src/pdf/BAHAN AKTUALISASI/Wali anak/perwalian Anak kandung dibawah umur.pdf",
+            "src/pdf/BAHAN AKTUALISASI/Wali anak/Surat permohonan Perwalian  TNI.pdf",
+            "src/pdf/BAHAN AKTUALISASI/Wali anak/Wali Anak ( Ponakan) Waris dibawah umur.pdf",
             // ... (lanjutkan daftar file kedua jika ada)
         ];
 
@@ -58,6 +63,6 @@
 
         // --- Jalankan fungsi untuk setiap daftar saat halaman dimuat ---
         document.addEventListener('DOMContentLoaded', () => {
-            generateFormList(pdfFiles1, 'form');
+            generateFormList(pdfFiles1, 'form-list-1');
             generateFormList(pdfFiles2, 'form-list-2');
         });
