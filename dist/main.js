@@ -11,10 +11,10 @@
 
         // --- Daftar File 2 ---
         const pdfFiles2 = [
-            "src/pdf/BAHAN AKTUALISASI/Penetapan Anak/Permohonan Penetapan anak Pasangan meninggal.pdf",
+            "src/pdf/BAHAN AKTUALISASI/Penetapan Anak/Permohonan Penetapan anak (Pasangan meninggal).pdf",
             "src/pdf/BAHAN AKTUALISASI/Penetapan Anak/form Permohonan Penetapan anak.pdf",
             "src/pdf/BAHAN AKTUALISASI/Pengangkatan anak/Form Pengesahan Anak Angkat.pdf",
-            "src/pdf/BAHAN AKTUALISASI/Permohonan Ganti nama/Permohonan Ganti Nama Sertifikat.pdf",
+            "src/pdf/BAHAN AKTUALISASI/Permohonan Ganti nama/Permohonan Ganti Nama Pemilik Pada Sertifikat.pdf",
             "src/pdf/BAHAN AKTUALISASI/Pengangkatan anak/Form Pengesahan Anak Angkat.pdf",
             "src/pdf/BAHAN AKTUALISASI/Permohonan Ganti nama/Permohonan Ganti Nama.pdf",
             "src/pdf/BAHAN AKTUALISASI/Wali anak/perwalian Anak kandung dibawah umur.pdf",
@@ -31,35 +31,42 @@
             return fileName.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
         }
 
-        // --- Fungsi yang dapat digunakan kembali untuk membuat daftar ---
-        function generateFormList(fileArray, listId) {
-            const formList = document.getElementById(listId);
-            if (!formList) return; // Hentikan jika elemen tidak ditemukan
+       // --- Fungsi yang dapat digunakan kembali untuk membuat daftar ---
+function generateFormList(fileArray, listId) {
+    const formList = document.getElementById(listId);
+    if (!formList) return; // Hentikan jika elemen tidak ditemukan
 
-            fileArray.forEach(filePath => {
-                const listItem = document.createElement("li");
-                const cardDiv = document.createElement("div");
-                cardDiv.className = "flex flex-col gap-8 px-5 py-10 shadow-lg bg-white rounded-lg";
+    fileArray.forEach(filePath => {
+        const listItem = document.createElement("li");
 
-                const title = document.createElement("p");
-                title.className = "truncate font-medium text-gray-700";
-                title.textContent = createTitleFromFile(filePath);
+        // 1. Kartu utama sekarang adalah <div> lagi
+        const cardDiv = document.createElement("div");
+        cardDiv.className = "flex flex-col justify-between gap-8 px-5 py-10 shadow-lg bg-white rounded-lg min-h-[170px]";
 
-                const button = document.createElement("button");
-                button.className = "bg-green-400 px-7 w-28 text-center py-3 rounded-full text-white font-bold hover:bg-green-500 transition-colors";
+        // Elemen judul tetap sama
+        const title = document.createElement("p");
+        title.className = "truncate font-medium text-gray-800 text-base";
+        title.textContent = createTitleFromFile(filePath);
 
-                const link = document.createElement("a");
-                link.href = filePath;
-                link.target = "_blank";
-                link.textContent = "View";
+        // 2. Span diubah menjadi <a> dengan style tombol
+        const linkButton = document.createElement("a");
+        linkButton.href = filePath;
+        linkButton.target = "_blank";
+        linkButton.textContent = "Lihat Dokumen";
+        // Styling agar terlihat seperti tombol
+        linkButton.className = "bg-green-500 text-white font-bold py-2 px-4 rounded-full hover:bg-green-600 transition-colors text-center w-full md:w-auto md:self-start";
 
-                button.appendChild(link);
-                cardDiv.appendChild(title);
-                cardDiv.appendChild(button);
-                listItem.appendChild(cardDiv);
-                formList.appendChild(listItem);
-            });
-        }
+        // Memasukkan judul dan tombol tautan ke dalam kartu div
+        cardDiv.appendChild(title);
+        cardDiv.appendChild(linkButton);
+
+        // Memasukkan kartu div ke dalam item daftar
+        listItem.appendChild(cardDiv);
+
+        // Memasukkan item daftar ke dalam daftar utama
+        formList.appendChild(listItem);
+    });
+}
 
         // --- Jalankan fungsi untuk setiap daftar saat halaman dimuat ---
         document.addEventListener("DOMContentLoaded", () => {
