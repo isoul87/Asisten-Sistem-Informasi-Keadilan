@@ -1,3 +1,4 @@
+
  // --- Daftar File 1 ---
         const pdfFiles1 = [
             "src/pdf/Form Pengesahan Anak Angkat.pdf",
@@ -11,8 +12,8 @@
 
         // --- Daftar File 2 ---
         const pdfFiles2 = [
-            "src/pdf/BAHAN AKTUALISASI/Penetapan Anak/Permohonan Penetapan anak (Pasangan meninggal).pdf",
-            "src/pdf/BAHAN AKTUALISASI/Penetapan Anak/form Permohonan Penetapan anak.pdf",
+            "src/pdf/BAHAN AKTUALISASI/Pengesahan Anak/Permohonan Pengesahan anak (Pasangan meninggal).pdf",
+            "src/pdf/BAHAN AKTUALISASI/Pengesahan Anak/Permohonan Pengesahan anak.pdf",
             "src/pdf/BAHAN AKTUALISASI/Pengangkatan anak/Form Pengesahan Anak Angkat.pdf",
             "src/pdf/BAHAN AKTUALISASI/Permohonan Ganti nama/Permohonan Ganti Nama Pemilik Pada Sertifikat.pdf",
             "src/pdf/BAHAN AKTUALISASI/Pengangkatan anak/Form Pengesahan Anak Angkat.pdf",
