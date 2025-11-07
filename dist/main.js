@@ -12,21 +12,21 @@
 
         // --- Daftar File 2 ---
         const pdfFiles2 = [
-            "src/pdf/BAHAN AKTUALISASI/Pengesahan Anak/Permohonan Pengesahan anak (Pasangan meninggal).pdf",
-            "src/pdf/BAHAN AKTUALISASI/Pengesahan Anak/Permohonan Pengesahan anak.pdf",
-            "src/pdf/BAHAN AKTUALISASI/Pengangkatan anak/Form Pengesahan Anak Angkat.pdf",
-            "src/pdf/BAHAN AKTUALISASI/Permohonan Ganti nama/Permohonan Ganti Nama Pemilik Pada Sertifikat.pdf",
-            "src/pdf/BAHAN AKTUALISASI/Pengangkatan anak/Form Pengesahan Anak Angkat.pdf",
-            "src/pdf/BAHAN AKTUALISASI/Permohonan Ganti nama/Permohonan Ganti Nama.pdf",
-            "src/pdf/BAHAN AKTUALISASI/Wali anak/perwalian Anak kandung dibawah umur.pdf",
-            "src/pdf/BAHAN AKTUALISASI/Wali anak/Surat permohonan Perwalian  TNI.pdf",
-            "src/pdf/BAHAN AKTUALISASI/Wali anak/Wali Anak ( Ponakan) Waris dibawah umur.pdf",
+            "src/pdf/BAHAN AKTUALISASI/MS/Pengesahan Anak/Permohonan Pengesahan anak (Pasangan meninggal).docx",
+            "src/pdf/BAHAN AKTUALISASI/MS/Pengesahan Anak/Permohonan Pengesahan anak.docx",
+            "src/pdf/BAHAN AKTUALISASI/MS/Pengangkatan anak/Form Pengesahan Anak Angkat.docx",
+            "src/pdf/BAHAN AKTUALISASI/MS/Permohonan Ganti nama/Permohonan Ganti Nama Pemilik Pada Sertifikat.docx",
+            "src/pdf/BAHAN AKTUALISASI/MS/Pengangkatan anak/Form Pengesahan Anak Angkat.docx",
+            "src/pdf/BAHAN AKTUALISASI/MS/Permohonan Ganti nama/Permohonan Ganti Nama.docx",
+            "src/pdf/BAHAN AKTUALISASI/MS/Wali anak/perwalian Anak kandung dibawah umur.docx",
+            "src/pdf/BAHAN AKTUALISASI/MS/Wali anak/Surat permohonan Perwalian  TNI.docx",
+            "src/pdf/BAHAN AKTUALISASI/MS/Wali anak/Wali Anak ( Ponakan) Waris dibawah umur.docx",
             // ... (lanjutkan daftar file kedua jika ada)
         ];
 
         // Fungsi untuk membuat judul yang bersih dari path file
         function createTitleFromFile(path) {
-            let fileName = path.split("/").pop().replace(".pdf", "");
+            let fileName = path.split("/").pop().replace(".docx", "");
             fileName = fileName.replace(/_1$/, "").replace(/_1ORG_1$/, "");
             fileName = fileName.replace(/_/g, " ");
             return fileName.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
